@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+    <head>
+      <!-- Polices d'écriture et style CSS -->
+      <link rel="stylesheet" href="css/newstyle.css">
+      <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Nobile&display=swap" rel="stylesheet">
+      <link rel="icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="fonts/fonts.css" type="text/css"  />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>L'Autoécole du futur</title>
+    </head>
+    <body>
+      <!-- Barre de navigation -->
+      <div class="newnav">
+        <div style="background-color:white">
+          <a href="index.html"><img class="logo" height="54px" style="margin-left:95px;padding-bottom:9px;" src="images/logoRoro.png" alt="logo"></a>
+          <div style="margin-left:3.5%" class="dropdown"><a href="ajouter_eleve.html"><button class="dropbtn">S'inscrire</button></a></div>
+          <div class="dropdown"><a href="tarifs.html"><button class="dropbtn">Tarifs</button></a></div>
+          <a class="deco" href="portail_moniteur.html" style="padding:12px;float:right;margin-right:75px;">Portail Moniteur</a>
+        </div>
+        <!-- Ombre sous la barre -->
+        <div class="shadow"></div>
+      </div>
+
+  	  <!-- Formulaire d'ajout d'un élève -->
+      <div class="formulaire" style="height:880px;padding:10px">
+          <div class="inscription" style="margin-top:1%">
+            <img height="70px" style="padding:0px;margin-left:3.25%" src="images/character.png" alt="icon">
+            <h3 style="font-size:3.5rem;text-align:center;color: #333"> Inscription</h3>
+          </div>
+        <form style="  font-family: 'Roboto', sans-serif;font-size:1.5rem;margin-left:60px; margin-right:60px;" class="" action="bienvenue.php" method="post">
+        <!-- Choix du sexe (bouton radio) -->
+  		    <div class="sexe">
+            <label class="container" style="padding-right:35px;">Homme
+              <input type="radio" checked="checked" name="sexe" value="H">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Femme
+              <input type="radio" name="sexe" value="F">
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+  		    <!-- Renseignement des informations de l'élève -->
+          <label for="nom">Nom de l'élève</label><br>
+          <input type="text" id="nom" name="nom" required minlength="1" maxlength="30" placeholder="Ton p'tit nom"><br>
+          <hr class="underrule">
+          <label for="prenom">Prénom de l'élève</label><br>
+          <input type="text" id="prenom" name="prenom" required minlength="1" maxlength="30" placeholder="Ton Prénom"><br>
+          <hr class="underrule">
+          <label for="naissance">Date de naissance</label><br>
+          <input max="2004-12-01" type="date" id="naissance" name="naissance"><br>
+          <hr class="underrule">
+          <label for="email">Adresse Mail</label><br>
+          <input type="email" id="email" name="email" required minlength="1" maxlength="50" placeholder="exemple@email.fr"><br>
+          <hr class="underrule">
+          <input type="submit" style="margin-top:52px;padding:10px;width:50%;margin-left:24%">
+        </form>
+        </div>
+        <!-- Pied de page -->
+        <div class="bottom-container" style="margin-top:200px;">
+          <a href="https://www.facebook.com/Nitroschool-105795200928016/"><img src="images/facebook.png" height="80px" alt=""></a>
+          <a href="https://twitter.com/nitroschool/"><img src="images/twitter.png" height="80px" alt=""></a>
+          <a href="https://www.instagram.com/nitroschool/?hl=fr/"><img src="images/instagram.png" height="80px" alt=""></a>
+          <p style="word-spacing: normal ; color: white; font-size: 1em ; font-family: 'Lora', serif;";>© 2019 Benjamin Missaoui</p>
+        </div>
+      </body>
+</html>
